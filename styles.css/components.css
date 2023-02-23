@@ -1,0 +1,120 @@
+.button--black {
+  width: 200px;
+  background: #303030;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  padding: 21px;
+}
+
+.button--black:hover {
+  background: #505050;
+  transition: all 500ms;
+}
+
+.button--black:active {
+  background: #000000;
+  transition: all 500ms;
+}
+
+.button--white {
+  width: 200px;
+  background: #ffffff;
+  color: #303030;
+  border: 1px solid #303030;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  padding: 21px;
+}
+
+.button--white:hover {
+  background: #303030;
+  color: #ffffff;
+  transition: all 500ms;
+}
+
+.button--white:active {
+  background: #000000;
+  color: #ffffff;
+  transition: all 500ms;
+}
+
+.circle {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+  height: 54px;
+  width: 54px;
+}
+
+.circle:hover {
+  background: #f0f0f0;
+  transition: background 500ms;
+}
+
+.circle:active {
+  background: rgb(111, 110, 110);
+  transition: all 500ms;
+}
+
+.rightArrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%) rotate(-45deg);
+  border: solid black;
+  border-width: 0 1px 1px 0;
+}
+
+.leftArrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%) rotate(135deg);
+  border: solid black;
+  border-width: 0 1px 1px 0;
+}
+
+.ellipse {
+  width: 110px;
+  padding: 13px;
+  background: #f0f0f0;
+  border-radius: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.ellipse:hover {
+  background: #dddddd;
+  color: #303030;
+  transition: background 500ms;
+}
+
+.ellipse:active,
+.ellipse--active {
+  background: #303030;
+  color: #ffffff;
+  transition: all 500ms;
+}
+
+.button__sale {
+  width: 50px;
+  padding: 4px 12px;
+  background: #5b8a8f;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  color: #ffffff;
+}

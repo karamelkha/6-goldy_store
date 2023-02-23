@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prata&family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css/reset.css" />
+    <link rel="stylesheet" href="./styles.css/components.css" />
+    <link rel="stylesheet" href="./styles.css/style.css" />
+    <title>Goldy Store</title>
+  </head>
+
+  <body>
+    <header>
+      <ul class="header__block">
+        <ul class="header__items">
+          <li class="icon-mapImg"></li>
+          <li>Санкт-Петербург</li>
+          <li class="icon-arrDownImg"></li>
+        </ul>
+        <ul class="header__items">
+          <li class="icon-phoneImg"></li>
+          <li>8 800 785-25-35</li>
+        </ul>
+      </ul>
+      <ul class="logo">
+        <h1 class="logo__title">
+          <span class="logo__title--gold"> Goldy </span>
+          Store
+        </h1>
+        <li class="logo__description">ювелирный магазин</li>
+      </ul>
+      <ul class="header__block">
+        <ul class="header__items">
+          <li><a href="#">Вход</a></li>
+          <li class="pipe"></li>
+          <li><a href="#">Регистрация</a></li>
+        </ul>
+        <ul class="header__items">
+          <li class="icon-favorite"></li>
+          <li class="icon-chart"></li>
+          <li class="icon-bag"></li>
+        </ul>
+      </ul>
+    </header>
+    <nav>
+      <ul class="nav__items">
+        <li><a href="#">КАТАЛОГ</a></li>
+        <li><a href="#">АКЦИИ</a></li>
+        <li><a href="#">БРЕНДЫ</a></li>
+        <li><a href="#">МАГАЗИНЫ</a></li>
+        <li><a href="#">О НАС</a></li>
+        <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+        <li><a href="#">СТАТЬИ</a></li>
+      </ul>
+
+      <div class="nav__form">
+        <div class="verticalLine"></div>
+        <div class="icon-search"></div>
+        <input type="text" placeholder="Поиск по сайту" />
+      </div>
+    </nav>
+
+    <section class="promo">
+      <!-- рисунок бэкдроп -->
+      <img class="promo__backdrop" src="./svg/diamond.svg" alt="diamond" />
+
+      <!-- картинки-кольца -->
+      <div class="promo__Images">
+        <!-- убирать и добавлять класс хиден -->
+        <!-- 1img -->
+        <div id="promo__Img1" class="promo__Img">
+          <img src="./img/title_ring.png.png" alt="ring" />
+        </div>
+
+        <div id="promo__Img1" class="hidden">
+          <img src="./img/title_ring.png.png" alt="ring" />
+        </div>
+
+        <div id="promo__Img1" class="hidden">
+          <img src="./img/title_ring.png.png" alt="ring" />
+        </div>
+      </div>
+
+      <!-- слайдер -->
+      <div class="slider">
+        <div class="slider__dote--active"></div>
+        <div class="slider__dote"></div>
+        <div class="slider__dote"></div>
+      </div>
+
+      <!-- контент -->
+      <div class="promo__content">
+        <div class="promo__heading promo__heading--location">
+          Суперскидка до 60%
+          <div class="promo__heading--Bold">НА БРИЛЛИАНТЫ</div>
+        </div>
+        <button class="button--black">ПОДРОБНЕЕ</button>
+      </div>
+
+      <div class="circle circle--leftLocation">
+        <div class="leftArrow"></div>
+      </div>
+
+      <div class="circle circle--rightLocation">
+        <div class="rightArrow"></div>
+      </div>
+    </section>
+
+    <main>
+      <section class="content">
+        <h2 class="content__heading">Популярные категории</h2>
+        <!-- карточки -->
+        <ul class="contentItems">
+          <a href="#">
+            <li class="contentItems__item">
+              <img
+                width="127"
+                height="100"
+                class="contentItems__img"
+                src="./img/popularCategories/1.png"
+                alt="rings"
+              />
+              <h4 class="contentItems__heading">Кольца</h4>
+            </li>
+          </a>
+
+          <a href="#">
+            <li class="contentItems__item">
+              <img
+                width="102"
+                height="130"
+                class="contentItems__img"
+                src="./img/popularCategories/2.png"
+                alt="earrings"
+              />
+              <h4 class="contentItems__heading">Серьги</h4>
+            </li>
+          </a>
+
+          <a href="#">
+            <li class="contentItems__item">
+              <img
+                width="117"
+                height="93"
+                class="contentItems__img"
+                src="./img/popularCategories/3.png"
+                alt="engagement_rings"
+              />
+              <h4 class="contentItems__heading">Помолвочные кольца</h4>
+            </li></a
+          >
+
+          <a href="#">
+            <li class="contentItems__item">
+              <img
+                width="141"
+                height="118"
+                class="contentItems__img"
+                src="./img/popularCategories/4.png"
+                alt="bracelet"
+              />
+              <h4 class="contentItems__heading">Браслеты</h4>
+            </li>
+          </a>
+
+          <a href="#">
+            <li class="contentItems__item">
+              <img
+                width="128"
+                height="128"
+                class="contentItems__img"
+                src="./img/popularCategories/5.png"
+                alt="necklace"
+              />
+              <h4 class="contentItems__heading">Колье и подвески</h4>
+            </li>
+          </a>
+
+          <a href="#">
+            <li class="contentItems__item">
+              <img
+                width="122"
+                height="147"
+                class="contentItems__img"
+                src="./img/popularCategories/6.png"
+                alt="watch"
+              />
+              <h4 class="contentItems__heading">Часы</h4>
+            </li>
+          </a>
+        </ul>
+      </section>
+
+      <section class="products">
+        <h2 class="content__heading">Распродажа</h2>
+
+        <ul class="list-group">
+          <li class="list-group-item ellipse ellipse--active" data-tab="ring">
+            Кольца
+          </li>
+          <li class="list-group-item ellipse" data-tab="earring">Серьги</li>
+          <li class="list-group-item ellipse" data-tab="bracelet">Браслеты</li>
+        </ul>
+
+        <ul class="products__cards" data-tab-content="ring">
+          <li class="products__card">
+            <div class="button__sale button__sale--location">Sale</div>
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/ring1.webp"
+                alt="ring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">41 000 ₽</div>
+              <div class="card__price--strikethrough">65 000 ₽</div>
+            </div>
+            <p class="card__description">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/ring2.webp"
+                alt="ring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">56 000 ₽</div>
+            </div>
+            <p class="card__description">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/ring3.webp"
+                alt="ring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">37 500 ₽</div>
+            </div>
+            <p class="card__description">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/ring4.webp"
+                alt="ring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">39 200 ₽</div>
+            </div>
+            <p class="card__description">
+              Стильное кольцо из белого золота c бриллиантами
+            </p>
+          </li>
+        </ul>
+
+        <ul class="products__cards hidden" data-tab-content="earring">
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/earring1.webp"
+                alt="earring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">34 800 ₽</div>
+            </div>
+            <p class="card__description">
+              Серьги-пусеты из серебра с камнями циркония
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/earring2.webp"
+                alt="earring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">55 800 ₽</div>
+            </div>
+            <p class="card__description">
+              Серьги-пусеты из серебра в форме сердец
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/earring3.webp"
+                alt="earring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">29 700 ₽</div>
+            </div>
+            <p class="card__description">
+              Серьги-пусеты из серебра с камнями циркония
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/earring4.webp"
+                alt="earring"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">53 000 ₽</div>
+            </div>
+            <p class="card__description">
+              Серьги-пусеты из серебра в виде крыльев ангела
+            </p>
+          </li>
+        </ul>
+
+        <ul class="products__cards hidden" data-tab-content="bracelet">
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/bracelet2.webp"
+                alt="bracelet"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">76 400 ₽</div>
+            </div>
+            <p class="card__description">
+              Браслет из серебра с элегантной застежкой
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/bracelet1.webp"
+                alt="bracelet"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">68 300 ₽</div>
+            </div>
+            <p class="card__description">
+              Браслет из серебра с регулируемой застежкой
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/bracelet3.webp"
+                alt="bracelet"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">73 800 ₽</div>
+            </div>
+            <p class="card__description">
+              Браслет из серебра с синими кристаллами
+            </p>
+          </li>
+
+          <li class="products__card">
+            <div class="icon-favorite icon-favorite--location"></div>
+            <div class="icon-eyes icon-eyes--location"></div>
+            <div class="card__images">
+              <img
+                width="200"
+                height="200"
+                src="./img/sale/bracelet4.webp"
+                alt="bracelet"
+              />
+              <div class="slider">
+                <div class="slider__dote--active"></div>
+                <div class="slider__dote"></div>
+                <div class="slider__dote"></div>
+              </div>
+            </div>
+            <div class="card__price card__price--location">
+              <div class="card__price--bold">61 200 ₽</div>
+            </div>
+            <p class="card__description">Открытый браслет-бэнгл из серебра</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./scripts/tabs-product.js"></script>
+  </body>
+</html>

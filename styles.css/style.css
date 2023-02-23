@@ -1,0 +1,392 @@
+body {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: #303030;
+}
+
+header {
+  margin-top: 24px;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__block {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  gap: 60px;
+}
+
+.header__items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-mapImg {
+  background: url(../svg/maps-normal.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.icon-arrDownImg {
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid #303030;
+  border-right: 2px solid #303030;
+  transform: rotate(135deg);
+}
+
+.icon-phoneImg {
+  background: url(../svg/phone.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.logo__title {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.logo__title--gold {
+  color: #e1a661;
+}
+
+.logo__description {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.27em;
+  color: #919191;
+}
+
+.pipe {
+  border: 1px solid #303030;
+  height: 10px;
+}
+
+.icon-favorite {
+  background: url(../svg/favorite-normal.svg);
+  width: 20px;
+  height: 18px;
+}
+
+.icon-favorite:hover {
+  background: url(../svg/favorite-hover.svg);
+}
+
+.icon-favorite:active {
+  background: url(../svg/favorite-press.svg);
+}
+
+.icon-chart {
+  background: url(../svg/chart.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.icon-bag {
+  background: url(../svg/bag-normal.svg);
+  width: 16px;
+  height: 17px;
+}
+
+.icon-bag:hover {
+  background: url(../svg/bag-hover.svg);
+  width: 16px;
+  height: 17px;
+}
+
+.icon-bag:active {
+  background: url(../svg/bag-press.svg);
+  width: 32px;
+  height: 32px;
+}
+
+nav {
+  background: rgba(248, 248, 248, 1);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.nav__items {
+  padding: 24px 50px 25px 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 45px;
+}
+
+.nav__items li:hover {
+  opacity: 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.verticalLine {
+  border: 1px solid #f0f0f0;
+  height: 100%;
+}
+
+.nav__form {
+  padding-right: 50px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.nav__form input {
+  width: 250px;
+}
+
+.icon-search {
+  background: url(../svg/seach.svg);
+  width: 16px;
+  height: 16px;
+}
+
+.nav__form input::placeholder {
+  color: #a2a2a2;
+}
+
+.promo {
+  position: relative;
+  background: #f8f8f8;
+  height: 560px;
+  margin-bottom: 120px;
+}
+
+.promo__backdrop {
+  padding-top: 24px;
+  height: 100%;
+  z-index: -2;
+}
+
+.slider {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+}
+
+.slider__dote {
+  background: #ffffff;
+  border: 1px solid #303030;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.slider__dote--active {
+  background: #303030;
+  border: 1px solid #303030;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.promo__Images {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  width: 548px;
+  height: 548px;
+}
+
+.promo__Img:hover {
+  transform: scale(102%);
+  transition: transform 500ms ease-in-out;
+}
+
+.promo__content {
+  position: absolute;
+  top: 0;
+  padding: 176px 126px 0px 126px;
+}
+
+.promo__heading {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.promo__heading--Bold {
+  font-size: 50px;
+}
+
+.promo__heading--location {
+  padding-bottom: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.circle--leftLocation {
+  top: 50%;
+  left: 10px;
+}
+
+.circle--rightLocation {
+  top: 50%;
+  right: 10px;
+}
+
+/* content */
+.content {
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__heading {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.contentItems {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.contentItems__item {
+  cursor: pointer;
+  height: 259px;
+  background: #f8f8f8;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contentItems__img {
+  margin: auto;
+}
+
+.contentItems__item:hover .contentItems__img {
+  transform: scale(105%);
+  transition: transform 300ms ease-in-out;
+}
+
+.contentItems__heading {
+  font-weight: 400;
+}
+
+/* товары */
+.products {
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.products__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.products__card {
+  position: relative;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  margin: auto;
+  padding: 40px 55px 26px 55px;
+}
+
+.card__images {
+  position: relative;
+}
+
+.button__sale--location {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  z-index: 1;
+}
+
+.icon-favorite--location {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  right: 16px;
+}
+
+.icon-eyes {
+  background: url(../svg/eyes-normal.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.icon-eyes:hover {
+  background: url(../svg/eyes-hover.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.icon-eyes--location {
+  position: absolute;
+  z-index: 1;
+  top: 52px;
+  right: 16px;
+}
+
+.card__price {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.card__price--location {
+  margin-bottom: 16px;
+}
+
+.card__price--bold {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.card__price--strikethrough {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration-line: line-through;
+  color: #8f8f8f;
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.hidden {
+  display: none;
+}
