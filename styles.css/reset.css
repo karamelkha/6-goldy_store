@@ -5,6 +5,15 @@
   border: none;
 }
 
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #303030;
+}
+a {
+  color: inherit;
+}
 *,
 *::before,
 *::after {

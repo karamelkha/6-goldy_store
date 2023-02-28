@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="./styles.css/reset.css" />
     <link rel="stylesheet" href="./styles.css/components.css" />
     <link rel="stylesheet" href="./styles.css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <title>Goldy Store</title>
   </head>
 
@@ -67,53 +73,108 @@
       </div>
     </nav>
 
-    <section class="promo">
-      <!-- рисунок бэкдроп -->
-      <img class="promo__backdrop" src="./svg/diamond.svg" alt="diamond" />
-
-      <!-- картинки-кольца -->
-      <div class="promo__Images">
-        <!-- убирать и добавлять класс хиден -->
-        <!-- 1img -->
-        <div id="promo__Img1" class="promo__Img">
-          <img src="./img/title_ring.png.png" alt="ring" />
-        </div>
-
-        <div id="promo__Img1" class="hidden">
-          <img src="./img/title_ring.png.png" alt="ring" />
-        </div>
-
-        <div id="promo__Img1" class="hidden">
-          <img src="./img/title_ring.png.png" alt="ring" />
-        </div>
-      </div>
-
-      <!-- слайдер -->
-      <div class="slider">
-        <div class="slider__dote--active"></div>
-        <div class="slider__dote"></div>
-        <div class="slider__dote"></div>
-      </div>
-
-      <!-- контент -->
-      <div class="promo__content">
-        <div class="promo__heading promo__heading--location">
-          Суперскидка до 60%
-          <div class="promo__heading--Bold">НА БРИЛЛИАНТЫ</div>
-        </div>
-        <button class="button--black">ПОДРОБНЕЕ</button>
-      </div>
-
-      <div class="circle circle--leftLocation">
-        <div class="leftArrow"></div>
-      </div>
-
-      <div class="circle circle--rightLocation">
-        <div class="rightArrow"></div>
-      </div>
-    </section>
-
     <main>
+      <!-- промо -->
+      <section class="promo">
+        <!-- свайпер -->
+        <div class="swiper promo__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="promo__content">
+                <h1 class="promo__heading">
+                  Суперскидка до 60% <br /><span class="promo__heading--Bold"
+                    >НА БРИЛЛИАНТЫ</span
+                  >
+                </h1>
+                <button
+                  type="button"
+                  class="button--black promo__button--black"
+                >
+                  ПОДРОБНЕЕ
+                </button>
+              </div>
+              <img src="./img/title_ring.png.png" alt="ring" />
+            </div>
+
+            <div class="swiper-slide">
+              <div class="promo__content">
+                <h1 class="promo__heading">
+                  Суперскидка до 60% <br /><span class="promo__heading--Bold"
+                    >НА БРИЛЛИАНТЫ</span
+                  >
+                </h1>
+                <button
+                  type="button"
+                  class="button--black promo__button--black"
+                >
+                  ПОДРОБНЕЕ
+                </button>
+              </div>
+              <img width="548" src="./img/Earring-PNG-Photos.png" alt="ring" />
+            </div>
+
+            <div class="swiper-slide">
+              <div class="promo__content">
+                <h1 class="promo__heading">
+                  Суперскидка до 60% <br /><span class="promo__heading--Bold"
+                    >НА БРИЛЛИАНТЫ</span
+                  >
+                </h1>
+                <button
+                  type="button"
+                  class="button--black promo__button--black"
+                >
+                  ПОДРОБНЕЕ
+                </button>
+              </div>
+              <img
+                width="548"
+                src="./img/Ring-Jewellery-PNG-HD.png"
+                alt="ring"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <div class="promo__content">
+                <h1 class="promo__heading">
+                  Суперскидка до 60% <br /><span class="promo__heading--Bold"
+                    >НА БРИЛЛИАНТЫ</span
+                  >
+                </h1>
+                <button
+                  type="button"
+                  class="button--black promo__button--black"
+                >
+                  ПОДРОБНЕЕ
+                </button>
+              </div>
+              <img
+                width="548"
+                src="./img/Ring-Jewellery-Transparent-Background.png"
+                alt="ring"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div
+            class="promo__swiper-button-next promo__swiper-button-next--position"
+          >
+            <div class="rightArrow"></div>
+          </div>
+          <div
+            class="promo__swiper-button-prev promo__swiper-button-prev--position"
+          >
+            <div class="leftArrow"></div>
+          </div>
+        </div>
+
+        <img class="promo__backdrop" src="./svg/diamond.svg" alt="diamond" />
+
+        <!-- контент -->
+      </section>
+
+      <!-- популярное -->
       <section class="content">
         <h2 class="content__heading">Популярные категории</h2>
         <!-- карточки -->
@@ -198,16 +259,31 @@
         </ul>
       </section>
 
+      <!-- Распродажа -->
       <section class="products">
         <h2 class="content__heading">Распродажа</h2>
 
-        <ul class="list-group">
-          <li class="list-group-item ellipse ellipse--active" data-tab="ring">
-            Кольца
-          </li>
-          <li class="list-group-item ellipse" data-tab="earring">Серьги</li>
-          <li class="list-group-item ellipse" data-tab="bracelet">Браслеты</li>
-        </ul>
+        <div class="products__headingBox">
+          <ul class="list-group">
+            <li class="list-group-item ellipse ellipse--active" data-tab="ring">
+              Кольца
+            </li>
+            <li class="list-group-item ellipse" data-tab="earring">Серьги</li>
+            <li class="list-group-item ellipse" data-tab="bracelet">
+              Браслеты
+            </li>
+          </ul>
+
+          <div class="daily__swiper">
+            <div class="promo__swiper-button-prev">
+              <div class="leftArrow"></div>
+            </div>
+
+            <div class="promo__swiper-button-next">
+              <div class="rightArrow"></div>
+            </div>
+          </div>
+        </div>
 
         <ul class="products__cards" data-tab-content="ring">
           <li class="products__card">
@@ -503,7 +579,247 @@
           </li>
         </ul>
       </section>
+
+      <!-- промо-группы -->
+      <section class="promo-group">
+        <ul class="promo-group__items">
+          <li class="promo-group__item">
+            <div class="promo-group__diamond">
+              <img src="./svg/diamond-mini.svg" alt="diamond" />
+            </div>
+            <div class="promo-group__img">
+              <img src="./img/promo-group/earring.png" alt="earring" />
+            </div>
+            <div class="promo-group__content">
+              СКИДКИ НА ВСЕ УКРАШЕНИЯ С БРИЛЛИАНТАМИ
+            </div>
+            <div class="promo-group__sale-box promo-group__sale-box--green">
+              <p class="sale-box__content">
+                ДО <span class="sale-box__content--bold">-50%</span>
+              </p>
+            </div>
+          </li>
+
+          <li class="promo-group__item">
+            <div class="promo-group__diamond">
+              <img src="./svg/diamond-mini.svg" alt="diamond" />
+            </div>
+            <div class="promo-group__img">
+              <img src="./img/promo-group/ring.png" alt="ring" />
+            </div>
+            <div class="promo-group__content">
+              СНИЖЕНИЕ ЦЕН НА ОБРУЧАЛЬНЫЕ КОЛЬЦА
+            </div>
+            <div class="promo-group__sale-box promo-group__sale-box--orange">
+              <p class="sale-box__content">
+                ДО <span class="sale-box__content--bold">-60%</span>
+              </p>
+            </div>
+          </li>
+
+          <li class="promo-group__item">
+            <div class="promo-group__diamond">
+              <img src="./svg/diamond-mini.svg" alt="diamond" />
+            </div>
+            <div class="promo-group__img">
+              <img
+                src="./img/promo-group/weeding-ring.png"
+                alt="weeding_ring"
+              />
+            </div>
+            <div class="promo-group__content">
+              СКИДКИ НА ВСЕ УКРАШЕНИЯ С БРИЛЛИАНТАМИ
+            </div>
+            <div class="promo-group__sale-box promo-group__sale-box--gold">
+              <p class="sale-box__content">
+                ДО <span class="sale-box__content--bold">-50%</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- товар дня -->
+      <section class="daily">
+        <div class="daily__headingBox">
+          <h2 class="content__heading">ТОВАР ДНЯ</h2>
+          <div class="daily__slider">
+            <div class="circle">
+              <div class="leftArrow"></div>
+            </div>
+
+            <div class="circle">
+              <div class="rightArrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="daily__page">
+          <!-- левая часть -->
+          <div class="daily__img">
+            <img
+              src="./img/daily/04EDA19C9767F7100CFFDE5D049E 1.png"
+              alt="daily"
+            />
+
+            <div class="daily__imgButtons">
+              <div class="button__new">New</div>
+              <div class="button__hit">Хит</div>
+              <div class="button__sale">Sale</div>
+            </div>
+          </div>
+
+          <!-- правая часть -->
+          <div class="daily__details">
+            <div class="daily__rating">
+              <img src="./svg/star-gold.svg" alt="rating" />
+              <img src="./svg/star-gold.svg" alt="rating" />
+              <img src="./svg/star-gold.svg" alt="rating" />
+              <img src="./svg/star-gold.svg" alt="rating" />
+              <img src="./svg/star.svg" alt="rating" />
+              <div></div>
+              <p>4,2</p>
+            </div>
+            <h2 class="daily__heading">Кольцо из золота с бриллиантами</h2>
+
+            <p class="daily__number">Артикул: 1012076</p>
+
+            <div class="daily__price-data">
+              <!-- price  -->
+              <div class="daily__prices">
+                <div class="daily__prace">22 000 ₽</div>
+                <div class="daily__price--strikethrough">40 000 ₽</div>
+                <div class="button__discont">-45%</div>
+              </div>
+
+              <!-- time -->
+              <div class="timer__box">
+                <div class="timer__innerBox">
+                  <time>12</time>
+                  <p class="timer__description">часов</p>
+                </div>
+                <div class="timer__delimetr">:</div>
+                <div class="timer__innerBox">
+                  <time>12</time>
+                  <p class="timer__description">минут</p>
+                </div>
+                <div class="timer__delimetr">:</div>
+                <div class="timer__innerBox">
+                  <time>12</time>
+                  <p class="timer__description">секунд</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="daily__line"></div>
+
+            <!-- colors -->
+
+            <div class="details__description">
+              <h4 class="details__heading">ЦВЕТ</h4>
+
+              <div class="details__colors">
+                <input type="radio" name="color" id="colororange" checked="" />
+                <label for="colororange" class="color--orange"></label>
+
+                <input type="radio" name="color" id="colorgray" />
+                <label for="colorgray" class="color--gray"></label>
+
+                <input type="radio" name="color" id="colorgreen" />
+                <label for="colorgreen" class="color--green"></label>
+
+                <input type="radio" name="color" id="colorgold" />
+                <label for="colorgold" class="color--gold"></label>
+              </div>
+
+              <h4 class="details__heading">РАЗМЕР</h4>
+
+              <div class="details__sizes">
+                <input
+                  type="radio"
+                  id="size16"
+                  name="size"
+                  value="16"
+                  checked=""
+                />
+                <label for="size16">16 </label>
+
+                <input type="radio" id="size17" name="size" value="17" />
+                <label for="size17">17</label>
+
+                <input type="radio" id="size18" name="size" value="18" />
+                <label for="size18">18</label>
+
+                <input type="radio" id="size19" name="size" value="19" />
+                <label for="size19">19</label>
+              </div>
+            </div>
+
+            <!-- купить -->
+            <div class="daily__bye">
+              <div class="bye__buttons">
+                <button class="button--black">В КОРЗИНУ</button>
+                <button class="button--white">КУПИТЬ В 1 клик</button>
+              </div>
+
+              <div class="bye__icons">
+                <div class="bye__icon">
+                  <div class="icon-favorite"></div>
+                  <p>Сохранить</p>
+                </div>
+
+                <div class="bye__icon">
+                  <div class="icon-chart"></div>
+                  <p>Сравнить</p>
+                </div>
+
+                <div class="bye__icon">
+                  <div class="icon-share"></div>
+                  <p>Поделиться</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="articles">
+        <h2 class="content__heading">СТАТЬИ</h2>
+        <ul class="articles__items">
+          <li>
+            <a class="article-box" href="#">
+              <img src="./img/article/1.png" alt="weeding-ring" />
+              <p class="article__data">21 сентября 2021</p>
+              <h3 class="article__heading">Обручальные кольца: тренды 2021</h3>
+            </a>
+          </li>
+
+          <li class="article-box">
+            <img src="./img/article/2.png" alt="trends" />
+            <p class="article__data">25 сентября 2021</p>
+            <h3 class="article__heading">Главные ювелирные тренды года</h3>
+          </li>
+
+          <li class="article-box">
+            <img src="./img/article/3.png" alt="pearl" />
+            <p class="article__data">21 сентября 2021</p>
+            <h3 class="article__heading">
+              Жемчуг: 7 малоизвестных фактов о культовом украшении
+            </h3>
+          </li>
+
+          <li class="article-box">
+            <img src="./img/article/4.png" alt="pearl" />
+            <p class="article__data">19 сентября 2021</p>
+            <h3 class="article__heading">
+              Как отличить золото от подделки: 10 практических советов
+            </h3>
+          </li>
+        </ul>
+      </article>
     </main>
+
+    <script src="./scripts/swiper.js"></script>
 
     <script src="./scripts/tabs-product.js"></script>
   </body>
